@@ -4,7 +4,8 @@
 
 # LINQ QUERY - MULTIPLE TABLE
 
-![MultipleTable](https://github.com/sercan96/LinQ__NorthwindDatabase/assets/38535473/aef5dec5-2289-48ca-9a7b-e0ed38b15479)
+![Multiple](https://github.com/sercan96/LinQ__NorthwindDatabase/assets/38535473/da65a5c0-fc06-4989-b996-28e6ca9a1cab)
+
 
 ![OrderVM](https://github.com/sercan96/LinQ__NorthwindDatabase/assets/38535473/ae1f5df4-218a-4c6c-8bfd-581ffd5c7229)
 
