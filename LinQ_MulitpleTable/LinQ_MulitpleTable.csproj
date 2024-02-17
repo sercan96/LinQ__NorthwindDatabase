@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C148ECAF-666A-4E84-8D18-AAEE62656501}</ProjectGuid>
-    <OutputType>WinExe</OutputType>
-    <RootNamespace>SimpleLinQ_NorthwindDatabase</RootNamespace>
-    <AssemblyName>SimpleLinQ_NorthwindDatabase</AssemblyName>
+    <ProjectGuid>{D4593130-343C-4240-92C6-EAE0BBAAB37C}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>LinQ_MulitpleTable</RootNamespace>
+    <AssemblyName>LinQ_MulitpleTable</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -48,10 +48,7 @@
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
-    <Reference Include="System.Deployment" />
-    <Reference Include="System.Drawing" />
     <Reference Include="System.Net.Http" />
-    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
@@ -66,19 +63,6 @@
     </Compile>
     <Compile Include="Employee.cs">
       <DependentUpon>Model1.tt</DependentUpon>
-    </Compile>
-    <Compile Include="MultipleTable.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MultipleTable.Designer.cs">
-      <DependentUpon>MultipleTable.cs</DependentUpon>
-    </Compile>
-    <Compile Include="SingleTable_Form.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include=".Designer.cs">
-      <DependentUpon>SingleTable_Form.cs</DependentUpon>
-      <SubType>Form</SubType>
     </Compile>
     <Compile Include="Model1.Context.cs">
       <AutoGen>True</AutoGen>
@@ -121,21 +105,9 @@
     <Compile Include="Territory.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="MultipleTable.resx">
-      <DependentUpon>MultipleTable.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="SingleTable_Form.resx">
-      <DependentUpon>SingleTable_Form.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
     <EntityDeploy Include="Model1.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>Model1.Designer.cs</LastGenOutput>
@@ -144,18 +116,6 @@
       <DependentUpon>Model1.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
-    <None Include="Properties\Settings.settings">
-      <Generator>SettingsSingleFileGenerator</Generator>
-      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
-    </None>
-    <Compile Include="Properties\Settings.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Settings.settings</DependentUpon>
-      <DesignTimeSharedInput>True</DesignTimeSharedInput>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Model1.Context.tt">
